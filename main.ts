@@ -1,20 +1,20 @@
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 5; index++) {
-        left.showColor(neopixel.colors(NeoPixelColors.Yellow))
-        cuteBot.singleheadlights(cuteBot.RGBLights.RGB_L, 255, 255, 0)
+        right.showColor(neopixel.colors(NeoPixelColors.Red))
+        cuteBot.singleheadlights(cuteBot.RGBLights.RGB_L, 255, 0, 0)
         basic.pause(500)
-        left.showColor(neopixel.colors(NeoPixelColors.Black))
+        right.showColor(neopixel.colors(NeoPixelColors.Black))
         cuteBot.singleheadlights(cuteBot.RGBLights.RGB_L, 0, 0, 0)
         basic.pause(500)
     }
 })
 input.onButtonPressed(Button.B, function () {
     for (let index = 0; index < 5; index++) {
-        right.showColor(neopixel.colors(NeoPixelColors.Blue))
-        cuteBot.singleheadlights(cuteBot.RGBLights.RGB_L, 0, 0, 255)
+        left.showColor(neopixel.colors(NeoPixelColors.Blue))
+        cuteBot.singleheadlights(cuteBot.RGBLights.RGB_R, 0, 0, 255)
         basic.pause(500)
-        right.showColor(neopixel.colors(NeoPixelColors.Black))
-        cuteBot.singleheadlights(cuteBot.RGBLights.RGB_L, 0, 0, 0)
+        left.showColor(neopixel.colors(NeoPixelColors.Black))
+        cuteBot.singleheadlights(cuteBot.RGBLights.RGB_R, 0, 0, 0)
         basic.pause(500)
     }
 })
